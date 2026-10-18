@@ -32,12 +32,15 @@ Computer Science Major | Computer Systems Concentration | UNC Asheville
 ## Featured Repositories and Implementations
 
 ### [us-census-demographic-pipelines](https://github.com/alex-skarvelis/us-census-demographic-pipelines)
-Cross-decade macro schema synchronization, generated key binding, and non-parametric percentile evaluations (`PERCENTILE_DISC`) mapping national population shifts.
-* Engineered a target schema reconciliation strategy to align mismatched historical and contemporary geospatial keys without runtime overhead.
-* Constructed a multi-dimensional Manhattan Distance model inside native SQL, implementing feature scale normalization to mathematically balance population density variance with racial demographics.
+A database engineering pipeline designed to synchronize mismatched historical and contemporary United States Census tables and evaluate multi-faceted demographic clustering natively inside PostgreSQL.
+* **Schema Engineering:** Reconciled structural drift between independent 2000 and 2019 geographical tables by implementing a deterministic string concatenation expression via a stored generated column (`GENERATED ALWAYS AS ... STORED`), completely eliminating runtime loop execution overhead.
+* **Statistical Distance Modeling:** Implemented continuous inverse distribution functions (`PERCENTILE_DISC`) for non-parametric distribution mapping, paired with a custom Manhattan Distance model that integrates feature scale normalization to mathematically balance population density variance with racial demographics.
 
-### [Buffalo-Urban-Forestry-Analytics(WIP)](WIP)
-Advanced data staging, localized regular expression text normalization, and native categorical linear regression modeling (`REGR_R2`) evaluating municipal ecosystem yields. *(Repository framework optimization in progress)*
+
+### [buffalo-urban-forestry-analytics](https://github.com/alex-skarvelis/buffalo-urban-forestry-analytics)
+An end-to-end data staging matrix, taxonomic normalization script, and lifecycle optimization pipeline evaluating municipal environmental asset value across 198 unique species lines.
+* **Defensive Data Auditing:** Built a multi-tier data-cleansing loop utilizing regular expression assertions to eliminate systemic field-survey noise, purge dead assets, enforce biometric bounding blocks, and cast attributes safely into double precision datatypes.
+* **Algorithmic Bias Normalization:** Engineered an automated lifecycle efficiency ratio to neutralize tree maturity size bias across varying population densities, wrapping variance tracking calculations in fallback wrappers to safely eliminate Bessel's correction division-by-zero errors.
 
 ---
 
